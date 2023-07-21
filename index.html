@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tip Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <img src='images/SPLITTER.png' style='margin-bottom: 50px' alt='website-logo' />
+  <main>
+    <section class='bill-section'>
+      <div>
+        <p>Bill</p>
+        <div class="input-wrapper">
+          <span class="icon"><img src='images/dollar-icon.svg' alt='dollar icon' /> </span>
+          <input type="number" class="input-with-icon" placeholder="0" name='bill' min="0">
+        </div>
+
+      </div>
+      <p>Select Tip %</p>
+      <div class='button-wrapper'>
+        <button class='tip-percent' value='5'>5%</button>
+        <button class='tip-percent' value='10'>10%</button>
+        <button class='tip-percent' value='15'>15%</button>
+        <button class='tip-percent' value='25'>25%</button>
+        <button class='tip-percent' value='50'>50%</button>
+        <input type="number" class='custom-input' placeholder='Custom' name='custom' min='0' />
+      </div>
+
+      <div>
+        <div class='error-wrapper'>
+          <p>Number of People</p>
+          <span class="error-message"></span>
+        </div>
+        <div class="input-wrapper">
+          <span class="icon"><img src='images/bill-avatar.svg' alt='person avatar' /> </span>
+          <input type="number" class="input-with-icon" placeholder="0" name='people'>
+        </div>
+      </div>
+    </section>
+    <section class='summary-section'>
+      <div>
+        <p>Tip Amount <br />
+          <span>/ person</span>
+        </p>
+        <h3 id='tip-amount'>$0.00</h3>
+      </div>
+      <div>
+        <p>Total <br />
+          <span>/ person</span>
+        </p>
+        <h3 id='total-amount'>$0.00</h3>
+      </div>
+      <button type='reset'>reset</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
